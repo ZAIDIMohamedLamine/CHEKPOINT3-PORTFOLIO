@@ -3,29 +3,32 @@
     <header>
         <title>Portfolio</title>
     </header>
-    <body style="background-color: rgba(251, 255, 252, 0.39) ;">
+    <body>
+      <link rel="stylesheet" href="style.css">
         <a name="TopOfThePage"> </a>
-        <div style="padding:5% 5% 5% 30%">
-            <a style="padding-right: 1cm;" class="active" href="#home">Home</a>
-            <a style="padding-right: 1cm;" class="active" href="#maps"Go to maps>resum</a>
-            <a style="padding-right: 1cm;" class="active" href="#pdf"Go to pdf>About</a>
-            <a style="padding-right: 1cm;" class="active" href="mailto:amine2013.ami@gmail.com">Contact</a>
+        <div id="navbar">
+         <ul>
+            <li><a  class="active" href="#home">Home</a></li>
+            <li><a  class="active" href="#maps"Go to maps>resum</a></li>
+            <li><a  class="active" href="#pdf"Go to pdf>About</a></li>
+            <li><a  class="active" href="mailto:amine2013.ami@gmail.com">Contact</a></li>
+         </ul>        
           </div>
           <div>
-            <section id="home">
-               <label for="Page">Go to:</label>
+            <section class="home">
+               <label for="">Go to:</label>
                 <div>
                 <ol>
-                    <li><button><a href="#Presentation">Presnetation</a></button></li>
-                    <li><button><a href="#Career">Career</a></button></li>
-                    <li><button><a href="#Portfolio">Portfolio</a></button></li>
-                    <li><button><a href="#Social media">Social media</a></button></li>
+                    <li><button><a href="">Presnetation</a></button></li>
+                    <li><button><a href="">Career</a></button></li>
+                    <li><button><a href="">Portfolio</a></button></li>
+                    <li><button><a href="">Social media</a></button></li>
                 </ol>
                 </div>
             </section>
 
                 <!-- Presentation table use the ID to for navigation-->
-                <div>
+                <div class="table">
                 <table width = "100%" border = "0">
                     <div>
                         <a name="Presentation"> </a>
@@ -33,7 +36,7 @@
          
                     <tr>
                        <td colspan = "2" bgcolor = "#b5dcb3">
-                          <h1 style="padding: 0cm 0cm 0cm 10cm;">Presnetation</h1>
+                          <h1>Presnetation</h1>
                        </td>
                     </tr>
                     <tr valign = "top">
@@ -60,7 +63,7 @@
                  </table>
                </div>
                <!-- Career table use the ID to for navigation-->
-                  <div>
+                  <div class="table">
                      <table width = "100%" border = "0">
                          <div>
                              <a name="Career"> </a>
@@ -68,7 +71,7 @@
               
                          <tr>
                             <td colspan = "2" bgcolor = "#b5dcb3">
-                               <h1 style="padding: 0cm 0cm 0cm 10cm;">Career</h1>
+                               <h1>Career</h1>
                             </td>
                          </tr>
                         </tr>
@@ -94,7 +97,7 @@
                       </table>
                  </div>
                  <!-- Portfolio table use the ID to for navigation-->
-                 <div>
+                 <div class="table">
                   <table width = "100%" border = "0">
                       <div>
                           <a name="Portfolio"> </a>
@@ -102,7 +105,7 @@
            
                       <tr>
                          <td colspan = "2" bgcolor = "#b5dcb3">
-                            <h1 style="padding: 0cm 0cm 0cm 10cm;">Portfolio</h1>
+                            <h1>Portfolio</h1>
                          </td>
                       </tr>
                       <tr valign = "top">
@@ -129,7 +132,7 @@
                    </table>
               </div>
               <!--Project Abstract from youtube-->
-              <div>
+              <div class="table"> 
                <table id="video" width = "100%" border = "0">
                    <div>
                        <a name="Project Abstract"> </a>
@@ -137,7 +140,7 @@
         
                    <tr>
                       <td colspan = "2" bgcolor = "#b5dcb3">
-                         <h1 style="padding: 0cm 0cm 0cm 10cm;">Project Abstract</h1>
+                         <h1>Project Abstract</h1>
                       </td>
                    </tr>
                    <tr valign = "top">
@@ -162,25 +165,25 @@
               </body>
             </section>
             <!--feedback section-->
-            <section>
+            <section class="feedback">
                <form action="singin" method="get">
-        <div>
+        <div id="name">
             <label for="full name">Full name</label>
             <input type="full name" placeholder="Full name" id="text">
         </div>
-        <div>
+        <div id="email">
             <label for="email">email</label>
             <input type="email" id="email" placeholder="email">
         </div>
-        <div>
+        <div id="phone">
             <label for="phone number">Phone number</label>
             <input type="phone number" id="phone number" placeholder="phone number">
         </div>
-        <div>
+        <div id="Birthdate">
             <label for="Birthdate">Birthdate</label>
             <input type="date">
         </div>
-        <div>
+        <div id="age">
             <label for="age">Age</label>
             <input type="number" min="0">
         </div>
@@ -221,6 +224,8 @@
                   <a style="padding: 0.3cm;" href="https://www.google.com/" target="_blank" class="fa fa-google"></a>
                </footer>
             </section>
+            <div class="top">
               <a href="#TopOfThePage"> Let's go up Top </a>
+            </div>
     </body>
 </html>
